@@ -76,7 +76,7 @@
     <script>
         function convertToFunkyFriday() {
             const osuSpeed = document.getElementById('osuSpeed').value;
-            const etternaCMod = osuSpeed * 3200 / 100; // Assuming receptor size is 100%
+            const etternaCMod = osuSpeed * 3200 / 100;
             const funkySpeed = etternaCMod / 310;
             document.getElementById('funkyResult').innerText = `Funky Friday Speed: ${funkySpeed.toFixed(2)}`;
         }
@@ -84,7 +84,7 @@
         function convertToOsuMania() {
             const funkySpeed = document.getElementById('funkySpeed').value;
             const etternaCMod = funkySpeed * 310;
-            const osuSpeed = etternaCMod / 3200 * 100; // Assuming receptor size is 100%
+            const osuSpeed = etternaCMod / 3200 * 100; 
             document.getElementById('osuResult').innerText = `osu!mania Speed: ${osuSpeed.toFixed(2)}`;
         }
 
